@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Cultural del IES Juan Bosco</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Semana Cultural del IES Juan Bosco</h1>
+        <button id="toggleModo">Modo claro</button>
+    </nav>
+
+    <section class="filtros">
+
+        <!-- Filtro por día -->
+        <div class="filtro-grupo">
+            <label for="filtroDia">Día:</label>
+            <select id="filtroDia">
+                <option value="Todos">Todos</option>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miércoles">Miércoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+                <option value="Toda la semana">Toda la semana</option>
+            </select>
+        </div>
+
+        <!-- Filtro por tipo -->
+        <div class="filtro-grupo">
+            <label for="filtroTipo">Tipo:</label>
+            <select id="filtroTipo">
+                <option value="Todos">Todos</option>
+                <option value="Taller">Taller</option>
+                <option value="Charla">Charla</option>
+                <option value="Concurso">Concurso</option>
+                <option value="Exposición">Exposición</option>
+                <option value="Proyección">Proyección</option>
+                <option value="Feria">Feria</option>
+                <option value="Actividad deportiva">Actividad deportiva</option>
+                <option value="Actuación">Actuación</option>
+            </select>
+        </div>
+
+        <!-- Buscador -->
+        <div class="filtro-grupo">
+            <label for="buscador">Buscar:</label>
+            <input type="text" id="buscador" placeholder="Buscar por título, lugar, responsable...">
+        </div>
+
+        <!-- Botón limpiar -->
+        <div class="filtro-grupo">
+            <button id="btnLimpiar" class="btn-primario">Limpiar filtros</button>
+        </div>
+
+    </section>
+
+    <main id="contenedorDias">
+        
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
