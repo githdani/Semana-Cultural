@@ -314,12 +314,14 @@ function aplicarFiltros()
     }
 
     // Filtro por tipo
-    if (valorTipo !== "Todos") {
+    if (valorTipo !== "Todos") 
+    {
         resultado = resultado.filter(act => act.tipo === valorTipo);
     }
 
     //  Buscador de texto
-    if (textoBusqueda !== "") {
+    if (textoBusqueda !== "") 
+    {
         resultado = resultado.filter(act =>
         act.titulo.toLowerCase().includes(textoBusqueda) ||
         act.lugar.toLowerCase().includes(textoBusqueda) ||
@@ -361,3 +363,4 @@ toggleModo.addEventListener("click", () => {
     toggleModo.textContent = "Modo claro"
   }
 })
+
